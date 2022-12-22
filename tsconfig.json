@@ -1,0 +1,29 @@
+{
+	"extends": "./node_modules/gts/tsconfig-google.json",
+	"compilerOptions": {
+		"rootDir": ".",
+		"baseUrl": ".",
+		"outDir": "out",
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"typeRoots": ["node_modules/@types"],
+
+		"paths": {
+			"#root/*": ["./src/*"]
+		},
+		"plugins": [
+			{"transform": "typescript-transform-paths", "useRootDirs": true},
+			{
+				"transform": "typescript-transform-paths",
+				"useRootDirs": true,
+				"afterDeclarations": true
+			}
+		]
+	},
+	"include": ["src/**/*.ts"],
+	"files": ["global.d.ts"],
+	"ts-node": {
+		"pretty": true,
+		"swc": true
+	}
+}
