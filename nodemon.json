@@ -6,5 +6,5 @@
 	"watch": ["src"],
 	"ignore": ["./node_modules", "./out", "./test", "*.log"],
 	"ext": "js,ts,json,yaml,yml,toml",
-	"exec": "ts-node --files -r dotenv/config -r tsconfig-paths/register src/index.ts NODE_ENV=\"development\""
+	"exec": "ts-node --files -r dotenv/config -r tsconfig-paths/register src/index.ts"
 }
