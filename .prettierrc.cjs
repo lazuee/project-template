@@ -1,11 +1,17 @@
 /** @type {import("prettier").Config} */
 const config = {
-	...require('gts/.prettierrc.json'),
 	pluginSearchDirs: [__dirname],
-	importOrder: ['^node:', '<THIRD_PARTY_MODULES>', '^#root', '^[./]'],
+	importOrder: ["^node:", "<THIRD_PARTY_MODULES>", "^#root", "^[./]"],
+	printWidth: 280,
 	importOrderSeparation: true,
 	importOrderSortSpecifiers: true,
-	endOfLine: 'lf',
+	bracketSpacing: true,
+	bracketSameLine: false,
+	arrowParens: "always",
+	trailingComma: "none",
+	useTabs: true,
+	tabWidth: 4,
+	endOfLine: "lf"
 };
 
 module.exports = config;
