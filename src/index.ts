@@ -1,6 +1,4 @@
-import {hello} from '#root/hello';
+import { hello } from '#root/hello';
 
-process.env.NODE_ENV === 'development' &&
-	(() => {
-		console.log(hello('lazuee'));
-	})();
+
+if (process.env.NODE_ENV.includes("development")) console.log(hello("lazuee"));
