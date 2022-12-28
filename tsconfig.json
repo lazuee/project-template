@@ -13,8 +13,8 @@
 		// "jsx": "preserve",
 
 		/* Modules */
-		"module": "ESNext",
-		"moduleResolution": "Node16",
+		"module": "CommonJS",
+		"moduleResolution": "Node",
 		"rootDir": "./",
 		"baseUrl": "./",
 		"typeRoots": ["./node_modules/@types"],
